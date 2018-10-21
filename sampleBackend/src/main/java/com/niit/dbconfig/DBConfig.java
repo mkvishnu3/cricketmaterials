@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.niit.dao.ProductDao;
 import com.niit.dao.ProductDaoImpl;
+import com.niit.model.Category;
 import com.niit.model.Product;
 
 @Configuration
@@ -46,7 +47,7 @@ public class DBConfig {
 		lsf.addProperties(hibernateProperties);
 		//Class[] classes=new Class[]{Product.class};
 		System.out.println("SessionFactory bean" +lsf);
-		return lsf.addAnnotatedClasses(new Class[]{Product.class}).buildSessionFactory();
+		return lsf.addAnnotatedClasses(new Class[]{Product.class,Category.class}).buildSessionFactory();
 	}
 	@Bean(name="productdao")
 	public ProductDao getProductDao()

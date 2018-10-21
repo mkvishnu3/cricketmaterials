@@ -21,11 +21,23 @@ public class App
         //context.refresh();
         ProductDao productDao=(ProductDao) context.getBean("productdao");
         Product product=new Product();
-        product.setProductName("Cricket Bat");
+        product.setProductName("Keeping glouse");
         product.setProductDesc("Rebok");
-        product.setQuantity(50);
-        product.setPrice(2500);
+        product.setQuantity(100);
+        product.setPrice(500);
         productDao.saveProduct(product);
+        
+        /*ProductDao productDao=(ProductDao)context.getBean("productdao");
+        //Product product=new Product();
+        Product p=productDao.getProduct(2);
+        //System.out.println(p);
+        //p.setPrice(5000);
+        p.setQuantity(10);
+        productDao.updateProduct(p);*/
+        
+        /*ProductDao productDao=(ProductDao)context.getBean("productdao");
+        productDao.deleteProduct(4);*/
+        
         
     }
 }

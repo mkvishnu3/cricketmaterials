@@ -6,14 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Home Page</title>
 </head>
-<body>
-<table align="center">
-	<tr>
-		<td>Home</td>
-		<td>AboutUs</td>
-		<td>SignIn</td>
-		<td>SignOut</td>
-	</tr>
-</table>
+<body bgcolor="green">
+<div>
+	<table>
+		<tr><td color="white">Home</td></tr>
+		<tr><td>AboutUs</td></tr>
+		<tr><td>SignIn</td></tr>
+		<tr><td>SignOut</td></tr>
+	</table>
+</div>
 </body>
 </html>
